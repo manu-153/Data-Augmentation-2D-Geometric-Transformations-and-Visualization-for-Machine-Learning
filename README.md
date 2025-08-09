@@ -1,4 +1,4 @@
-# 🧮 Linear Transformations and Visualizations in Python
+# 🧮 Linear Transformations and Visualizations in 
 
 This project demonstrates various **2D linear transformations** using Python, NumPy, and Matplotlib, including visualizing their effect on both vectors and images. The transformations are implemented as matrix operations and applied to sample vectors and point clouds.
 
