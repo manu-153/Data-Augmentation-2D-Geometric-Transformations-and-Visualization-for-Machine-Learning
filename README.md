@@ -1,8 +1,9 @@
 # 🧮 Linear Transformations and Visualizations in python
 
 
-This project demonstrates various **2D linear transformations** using Python, NumPy, and Matplotlib, including visualizing their effect on both vectors and images. The transformations are implemented as matrix operations and applied to sample vectors and point clouds.
+This project illustrates the application of 2D linear transformations through practical implementations in Python using NumPy for computation and Matplotlib for visualization. The core idea is to represent transformations such as scaling, rotation, reflection, and shearing as matrix operations, and then apply them to different data structures.
 
+To make the concepts more intuitive, the transformations are demonstrated on sample vectors as well as on point clouds and images, highlighting how linear algebra techniques directly influence geometric structures. By visualizing before-and-after effects, the project provides a clear understanding of how linear transformations work in two dimensions and how they are foundational in fields like computer graphics, computer vision, and data science.
 ---
 
 ## 📌 Features
