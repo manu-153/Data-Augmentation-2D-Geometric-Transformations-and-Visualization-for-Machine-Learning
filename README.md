@@ -1,107 +1,100 @@
-# Linear Transformations & Visualizations
+Linear Transformations & Visualizations
 
+This project demonstrates the use of 2D linear transformations with hands-on implementations in Python. Computations are handled with NumPy, while Matplotlib is used to visualize results. Transformations like scaling, rotation, reflection, and shearing are expressed as matrix operations and applied to various data structures.
 
-This project illustrates the application of 2D linear transformations through practical implementations in Python using NumPy for computation and Matplotlib for visualization. The core idea is to represent transformations such as scaling, rotation, reflection, and shearing as matrix operations, and then apply them to different data structures.
+To build intuition, these transformations are shown on vectors, point clouds, and images, making it clear how linear algebra shapes geometric structures. By comparing before-and-after visuals, the project highlights the role of linear transformations in computer graphics, computer vision, and data science.
 
-To make the concepts more intuitive, the transformations are demonstrated on sample vectors as well as on point clouds and images, highlighting how linear algebra techniques directly influence geometric structures. By visualizing before-and-after effects, the project provides a clear understanding of how linear transformations work in two dimensions and how they are foundational in fields like computer graphics, computer vision, and data science.
----
+📌 Features
 
-## 📌 Features
+Custom-built transformation functions
 
-* Custom transformation functions implemented from scratch
-* Linear transformation properties validation (e.g., linearity: `T(u+v) = T(u) + T(v)`)
-* Matrix-based transformation (`L(v) = Av`)
-* Transformations applied to vector bases and image data
-* Clear visualization using `matplotlib` scatter plots
+Verification of linearity properties (T(u+v) = T(u) + T(v))
 
----
+Matrix-based transformations (L(v) = Av)
 
-## 🧠 Transformations Covered
+Applications on basis vectors and image data
 
-### ✅ Basic Transformations
+Clear visualizations with matplotlib scatter plots
 
-* Custom transformation via element-wise operations
-* Matrix-based transformation
+🧠 Transformations Included
+✅ Basic
 
-### 🔄 Standard 2D Linear Transformations
+Element-wise transformations
 
-* Horizontal Scaling
-* Reflection across Y-axis
-* Stretching
-* Horizontal Shearing
-* Rotation
-* Rotation + Stretching Combined
+Matrix-based transformations
+
+🔄 Standard 2D Linear Transformations
+
+Horizontal scaling
+
+Reflection across the Y-axis
+
+Stretching
+
+Horizontal shearing
+
+Rotation
+
+Rotation combined with stretching
 
 Each transformation is applied to:
 
-* Basis vectors
-* A 2D image represented as point clouds
-* Arbitrary vectors
+Basis vectors
 
----
+Point clouds representing images
 
-## 📁 Folder Structure
+Arbitrary vectors
 
-```
+📁 Project Structure
 ├── data/
-│   └── image.txt            # Input file for image coordinates
-├── utils.py                 # Utility file for plotting transformations
-├── transformations.py       # Contains the code (main script)
-└── README.md                # This file
-```
+│   └── image.txt            # Input file with image coordinates
+├── utils.py                 # Helper functions for plotting
+├── transformations.py       # Main implementation script
+└── README.md                # Documentation
 
----
+🚀 Running the Project
 
-## 🚀 How to Run
+Clone the Repository
 
-### 1. Clone the Repository
-
-```bash
 git clone https://github.com/yourusername/linear-transformations.git
 cd linear-transformations
-```
 
-### 2. Install Dependencies
 
-```bash
+Install Dependencies
+
 pip install numpy matplotlib pandas
-```
 
-### 3. Run the Script
 
-Ensure `image.txt` is in `data/` directory and then run:
+Execute the Script
+Make sure image.txt is in the data/ directory, then run:
 
-```bash
 python transformations.py
-```
 
----
-
-## 📊 Visualization
+📊 Visualization Output
 
 Each transformation is visualized by:
 
-* Plotting original image coordinates (black)
-* Plotting transformed image coordinates (grey)
-* Showing transformed basis vectors using custom `utils.plot_transformation()`
+Plotting original coordinates (black)
 
----
+Plotting transformed coordinates (grey)
 
-## 📦 Dependencies
+Displaying transformed basis vectors using utils.plot_transformation()
 
-* `numpy`
-* `matplotlib`
-* `pandas`
+📦 Requirements
 
----
+numpy
 
-## 📎 Notes
+matplotlib
 
-* `image.txt` is expected to contain a 2×N matrix, where N is the number of points (columns).
-* All transformations use matrix multiplication (`@`) for consistency with linear algebra principles.
-* `utils.py` must contain a `plot_transformation` function that takes a transformation and two vectors as input.
+pandas
 
----
+📎 Additional Notes
+
+image.txt should contain a 2×N matrix, where N is the number of points.
+
+All transformations rely on matrix multiplication (@) for consistency with linear algebra.
+
+utils.py must include a plot_transformation function that takes a transformation and vectors as input.
 
 ## 📄 License
 
