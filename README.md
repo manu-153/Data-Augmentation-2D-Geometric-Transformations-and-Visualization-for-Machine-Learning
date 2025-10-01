@@ -1,102 +1,136 @@
-Linear Transformations and Visualizations
-This project explores 2D linear transformations through practical coding exercises in Python. Computations are driven by NumPy, while Matplotlib creates the visual representations. Key operations like rotation, reflection, and shearing are represented as matrix multiplications and applied to vectors, point sets, and images.
-Through side-by-side comparisons of original and transformed visuals, the project illustrates the role of linear algebra in modifying geometric forms and its relevance to fields such as computer graphics, computer vision, and data analysis.
-Key Features
+# Linear Transformations and Visualizations
 
-* Hand-crafted functions for transformations
-* Testing of linearity axioms, such as T(u + v) = T(u) + T(v)
-* Transformations via matrices, L(v) = A v
-* Usage on standard basis vectors and image datasets
-* Intuitive plots using Matplotlib for scatter-based displays
+This project explores **2D linear transformations** through practical coding exercises in Python. It leverages **NumPy** for computations and **Matplotlib** for visualizations. The project demonstrates how linear algebra operations (e.g., matrix multiplication) transform geometric structures, with applications in computer graphics, computer vision, and data science.
 
+---
 
-Transformations Included
-Basic
+## �� Overview
 
-* Element-wise transformations
-* Matrix-based transformations
+- **Key Transformations**: Rotation, reflection, shearing, scaling, and combined operations.
+- **Linearity Verification**: Tests axioms like `T(u + v) = T(u) + T(v)`.
+- **Visual Comparison**: Side-by-side plots of original and transformed data.
+- **Applications**: Applied to basis vectors, point clouds, and image data.
 
-Standard 2D Linear Transformations
+---
 
-* Horizontal scaling
-* Reflection across the Y-axis
-* Stretching
-* Horizontal shearing
-* Rotation
-* Rotation combined with stretching
+## ✨ Key Features
 
-Each transformation is applied to:
+- **Custom Transformation Functions**: Hand-crafted implementations of linear transformations.
+- **Linearity Verification**: Validates properties like `T(u + v) = T(u) + T(v)`.
+- **Matrix-Based Operations**: Transformations expressed as `L(v) = A @ v`.
+- **Multi-Data Support**: Works with basis vectors, point clouds, and image datasets.
+- **Intuitive Visualization**: Matplotlib scatter plots for clear before-and-after comparisons.
 
-* Basis vectors
-* Point clouds representing images
-* Arbitrary vectors
+---
 
+## ��� Transformations Included
 
-Project Structure
+### **Basic**
+- Element-wise transformations
+- Matrix-based transformations
+
+### **Standard 2D Linear Transformations**
+- Horizontal scaling
+- Reflection across the Y-axis
+- Stretching
+- Horizontal shearing
+- Rotation
+- Rotation combined with stretching
+
+**Each transformation is applied to**:
+- Basis vectors (`e₁`, `e₂`)
+- Point clouds (e.g., images from `data/image.txt`)
+- Arbitrary vectors
+
+---
+
+## �� Project Structure
+linear-transformations/
 ├── data/
-│   └── image.txt            # Input file with image coordinates
+│   └── image.txt            # Input file with image coordinates (2×N matrix)
 ├── utils.py                 # Helper functions for plotting
 ├── transformations.py       # Main implementation script
-└── README.md                # Documentation
+��── README.md                # Project documentation
 
+---
 
-Getting Started
+## 🚀 Getting Started
 
-1. Clone the repository
+### 1. Clone the Repository
 
-bashDownloadCopy code Wrapgit clone https://github.com/yourusername/linear-transformations.git
+```bash
+git clone https://github.com/yourusername/linear-transformations.git
 cd linear-transformations
 
-1. Install dependencies
-
+2. Install Dependencies
 bashDownloadCopy code Wrappip install numpy matplotlib pandas
-
-1. Run the script
-
-Make sure image.txt is in the data/ directory, then run:
+3. Run the Script
+Ensure data/image.txt exists, then execute:
 bashDownloadCopy code Wrappython transformations.py
 
-Visualization Output
-Each transformation is visualized by:
+�� Visualization Output
+Each transformation generates plots that:
 
-* Plotting original coordinates (black)
-* Plotting transformed coordinates (grey)
-* Displaying transformed basis vectors using utils.plot_transformation()
+* Display original coordinates (black)
+* Show transformed coordinates (gray)
+* Highlight transformed basis vectors using utils.plot_transformation().
 
 
-Requirements
+�� Requirements
 
-* numpy
-* matplotlib
-* pandas
+* Python 3.x
+* Libraries:
 
-Install with:
+numpy
+matplotlib
+pandas
+
+
+
+Install dependencies with:
 bashDownloadCopy code Wrappip install numpy matplotlib pandas
 
-Additional Notes
+📝 Additional Notes
 
-* image.txt should contain a 2×N matrix, where N is the number of points.
-* All transformations rely on matrix multiplication (@) for consistency with linear algebra.
-* utils.py must include a plot_transformation function that takes a transformation and vectors as input.
+* 
+image.txt Format:
+The file should contain a 2×N matrix where N is the number of points (e.g.,
+1 0
+0 1
+2 3
+...
 
 
-Example Usage (snippet)
-Include or adapt into your own script:
+* 
+Matrix Operations:
+All transformations use matrix multiplication (@) for consistency with linear algebra principles.
+
+* 
+Helper Function:
+utils.py includes plot_transformation(A, vectors), which visualizes transformations.
+
+
+
+�� Example Usage
 pythonDownloadCopy code Wrapimport numpy as np
 from utils import plot_transformation
 
-# Example transformation: rotate by theta
+# Rotate by theta (e.g., 45 degrees)
 theta = np.pi / 4
-A = np.array([[np.cos(theta), -np.sin(theta)],
-              [np.sin(theta),  np.cos(theta)]])
+A = np.array([
+    [np.cos(theta), -np.sin(theta)],
+    [np.sin(theta),  np.cos(theta)]
+])
 
-# Apply to a set of points V (2 x N)
+# Load points from data/image.txt (shape: 2 x N)
+V = np.loadtxt('data/image.txt')
+
+# Apply transformation
 V_transformed = A @ V
 
 # Visualize
 plot_transformation(A, V)
 
-License
+�� License
 This project is licensed under the MIT License — see the LICENSE file for details.
-
 
