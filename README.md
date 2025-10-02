@@ -4,7 +4,7 @@ This project explores **2D linear transformations** through practical coding exe
 
 ---
 
-## �� Overview
+## Overview
 
 - **Key Transformations**: Rotation, reflection, shearing, scaling, and combined operations.
 - **Linearity Verification**: Tests axioms like `T(u + v) = T(u) + T(v)`.
@@ -13,7 +13,7 @@ This project explores **2D linear transformations** through practical coding exe
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 - **Custom Transformation Functions**: Hand-crafted implementations of linear transformations.
 - **Linearity Verification**: Validates properties like `T(u + v) = T(u) + T(v)`.
@@ -23,7 +23,7 @@ This project explores **2D linear transformations** through practical coding exe
 
 ---
 
-## ��� Transformations Included
+## Transformations Included
 
 ### **Basic**
 - Element-wise transformations
@@ -44,7 +44,7 @@ This project explores **2D linear transformations** through practical coding exe
 
 ---
 
-## �� Project Structure
+## Project Structure
 linear-transformations/
 ├── data/
 │   └── image.txt            # Input file with image coordinates (2×N matrix)
@@ -54,7 +54,7 @@ linear-transformations/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Clone the Repository
 
@@ -90,7 +90,7 @@ pandas
 Install dependencies with:
 bashDownloadCopy code Wrappip install numpy matplotlib pandas
 
-📝 Additional Notes
+ Additional Notes
 
 * 
 image.txt Format:
