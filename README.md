@@ -2,11 +2,11 @@
 
 This project explores **2D linear transformations** through practical coding exercises in Python. It leverages **NumPy** for computations and **Matplotlib** for visualizations. The project demonstrates how linear algebra operations (e.g., matrix multiplication) transform geometric structures, with applications in computer graphics, computer vision, and data science.
 
----
+-
 
 ## Overview
 
-- **Key Transformations**: Rotation, reflection, shearing, scaling, and combined operations.
+- **Key TransformationS**: Rotation, reflection, shearing, scaling, and combined operations.
 - **Linearity Verification**: Tests axioms like `T(u + v) = T(u) + T(v)`.
 - **Visual Comparison**: Side-by-side plots of original and transformed data.
 - **Applications**: Applied to basis vectors, point clouds, and image data.
@@ -68,7 +68,7 @@ bashDownloadCopy code Wrappip install numpy matplotlib pandas
 Ensure data/image.txt exists, then execute:
 bashDownloadCopy code Wrappython transformations.py
 
-�� Visualization Output
+Visualization Output
 Each transformation generates plots that:
 
 * Display original coordinates (black)
@@ -76,7 +76,7 @@ Each transformation generates plots that:
 * Highlight transformed basis vectors using utils.plot_transformation().
 
 
-�� Requirements
+Requirements
 
 * Python 3.x
 * Libraries:
@@ -111,7 +111,7 @@ utils.py includes plot_transformation(A, vectors), which visualizes transformati
 
 
 
-�� Example Usage
+Ex Usage
 pythonDownloadCopy code Wrapimport numpy as np
 from utils import plot_transformation
 
