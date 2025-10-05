@@ -2,7 +2,7 @@
 
 This project explores **2D linear transformations** through practical coding exercises in Python. It leverages **NumPy** for computations and **Matplotlib** for visualizations. The project demonstrates how linear algebra operations (e.g., matrix multiplication) transform geometric structures, with applications in computer graphics, computer vision, and data science.
 
--
+---
 
 ## Overview
 
